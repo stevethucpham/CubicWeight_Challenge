@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xc6-mJ-7sD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProductViewController" customModule="CubicWeight_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="THv-Ch-PrT">
+                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLN-b5-4HA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="INS-sn-9rr">
+                                        <rect key="frame" x="16" y="11" width="382" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEo-Vp-5gN">
+                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="18.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Average Cubic Weight of ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="15"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Air Conditioners">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=": ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="15"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-PS-krD">
+                                                <rect key="frame" x="302.5" y="0.0" width="79.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="INS-sn-9rr" firstAttribute="centerY" secondItem="xLN-b5-4HA" secondAttribute="centerY" id="Bn6-wL-xbl"/>
+                                    <constraint firstItem="INS-sn-9rr" firstAttribute="leading" secondItem="xLN-b5-4HA" secondAttribute="leading" constant="16" id="Hf3-Zk-vIX"/>
+                                    <constraint firstAttribute="trailing" secondItem="INS-sn-9rr" secondAttribute="trailing" constant="16" id="uUu-gX-BUd"/>
+                                    <constraint firstAttribute="height" constant="40" id="vb0-Za-1Ao"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xLN-b5-4HA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4uV-pV-IUS"/>
+                            <constraint firstItem="xLN-b5-4HA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GlT-cA-czR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="THv-Ch-PrT" secondAttribute="bottom" id="QC4-fH-GiM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xLN-b5-4HA" secondAttribute="trailing" id="gvq-S8-7le"/>
+                            <constraint firstItem="THv-Ch-PrT" firstAttribute="top" secondItem="xLN-b5-4HA" secondAttribute="bottom" id="lf4-hJ-NVt"/>
+                            <constraint firstItem="THv-Ch-PrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="otc-tB-7Bn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="THv-Ch-PrT" secondAttribute="trailing" id="x3h-8n-M7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d7f-kD-w60">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="66m-nf-34h">
+                            <connections>
+                                <action selector="nextButtonClick:" destination="BYZ-38-t0r" id="xtD-6r-wFl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="averageCubicWeightLabel" destination="HS4-PS-krD" id="Vg4-y9-xWW"/>
+                        <outlet property="tableView" destination="THv-Ch-PrT" id="aZX-au-MW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TaY-IS-mP6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xc6-mJ-7sD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3KJ-Op-Uuu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nOB-Tl-WtM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDN-PK-Vof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+</document>
