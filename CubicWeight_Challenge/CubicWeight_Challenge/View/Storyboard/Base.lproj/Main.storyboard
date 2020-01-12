@@ -86,6 +86,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="averageCubicWeightLabel" destination="HS4-PS-krD" id="Vg4-y9-xWW"/>
+                        <outlet property="nextButton" destination="66m-nf-34h" id="z8f-cG-AgE"/>
                         <outlet property="tableView" destination="THv-Ch-PrT" id="aZX-au-MW4"/>
                     </connections>
                 </viewController>

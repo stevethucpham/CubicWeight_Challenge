@@ -15,6 +15,8 @@ protocol ProductViewModelType {
     /// Callback to reload table when data is loaded
     var reloadTable: (()->())? { get set }
     
+    var isDisableNextButton: (()->())? { get set }
+    
     /// Get total number of products
     func getProductCount() -> Int
     
@@ -43,6 +45,7 @@ class ProductViewModel: ProductViewModelType {
     // MARK: Output
     var showAlertClosure: ((String) -> ())?
     var reloadTable: (()->())?
+    var isDisableNextButton: (()->())?
     
     func getProductCount() -> Int {
         if let products = products {
@@ -75,6 +78,8 @@ class ProductViewModel: ProductViewModelType {
             loadProduct(pagination: nextPage)
         } else {
             debugPrint("End loading page")
+            guard let disable = isDisableNextButton else { return }
+            disable()
         }
     }
     

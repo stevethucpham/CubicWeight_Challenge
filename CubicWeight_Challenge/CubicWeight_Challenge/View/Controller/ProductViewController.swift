@@ -12,6 +12,7 @@ class ProductViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var averageCubicWeightLabel: UILabel!
+    @IBOutlet weak var nextButton: UIBarButtonItem!
     
     var viewModel: ProductViewModelType!
     
@@ -49,6 +50,12 @@ extension ProductViewController {
         viewModel.showAlertClosure = { [weak self] error in
             DispatchQueue.main.async {
                 self?.alert(title: "Error", message: error, okButtonTitle: "Ok")
+            }
+        }
+        
+        viewModel.isDisableNextButton = { [weak self ] in
+            DispatchQueue.main.async {
+                self?.nextButton.isEnabled = false
             }
         }
     }
