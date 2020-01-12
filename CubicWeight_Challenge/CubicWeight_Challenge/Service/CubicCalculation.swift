@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class AirConditionCubicCalculation {
     
     private static let conversionFactor: Float = 250
